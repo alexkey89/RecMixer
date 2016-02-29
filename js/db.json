@@ -1,0 +1,48 @@
+{
+	"Recipe": [{
+		"Title": "Souvlakia",
+		"Description": "Best food in the world! simply cook it!",
+		"Level": "Medium",
+		"img":"img/souvlakia.jpg",
+		"Healthiness": 0,
+		"Ingredients": [
+			"tomato",
+			"Lettuce",
+			"Olive oil",
+			"Chicken"
+		],
+		"glutenFree": false
+	}, 
+	{
+		"Title": "Chicken salad",
+		"Description": "Easy stuff bro",
+		"Level": "Easy",
+		"img":"img/chickensalad.jpg",
+		"Healthiness": 3,
+		"Ingredients": [
+			"tomato",
+			"Lettuce",
+			"Olive oil",
+			"Chicken",
+			"Parsely"
+		],
+		"glutenFree": true
+	},
+		{
+		"Title": "Makaronia tou fournou",
+		"Description": "finger licking good!",
+		"Level": "Medium",
+		"img":"img/pastitsio.jpg",
+		"Healthiness": 2,
+		"Ingredients": [
+			"Cream",
+			"Parsely",
+			"Olive oil",
+			"Mince beef",
+			"tomato puree"
+		],
+		"glutenFree": false
+	}]
+}
+
+

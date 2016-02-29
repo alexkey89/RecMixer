@@ -1,0 +1,40 @@
+<section class="container">
+
+    <div class="center searchBox">
+        <h2>Search Recipes</h2>
+        <input type="text" ng-model="query" placeholder="e.g Sweet and sour chicken..." autofocus />
+    </div>
+    <br />
+
+    <p ng-click="jinny=true">Ask Jinny</p>
+    <div class="overlay" ng-show="jinny" ng-click="jinny=false"></div>
+    <div class="popup" ng-show="jinny">
+        Random Recipe: {{randomRecipe.Title}}
+    </div>
+
+    <ul class="center allRecipes">
+        <li class="recipes" ng-repeat="Rec in Recipe | limitTo: 3 | filter: query ">
+
+            <a href="#/view3/{{Recipe.indexOf(Rec)}}">
+
+                <p>{{Rec.Title}}</p>
+
+                <p>Level: <strong>{{Rec.Level}}</strong>
+                </p>
+
+                <p class="des">{{Rec.Description}}</p>
+
+                <p ng-if="Rec.glutenFree">
+                    *Gluten Free <img class="GF_icon" src="img/GF.png" height="40" width="40" />
+                </p>
+
+                <p><img ng-src="{{Rec.img}}" height="120" width="180" />
+                </p>
+
+
+        </li>
+
+        </a>
+    </ul>
+
+</section>

@@ -1,0 +1,242 @@
+body, h1{
+	font-family: helvetica;
+	font-weight: 100;
+}
+
+body{
+	/*background: url('../img/bg2.png') no-repeat;*/
+      background: url(../img/bg2.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+img {
+    border: 2px dotted #ccc;
+    /*display: block;*/
+    /* padding: 10px; */
+    /*background: rgba(255, 255, 255, 0.9);*/
+    border-width: 4px;
+    margin-top: 13px;
+    margin-bottom: 14px;
+}
+
+.popup {
+    position: fixed;
+    background: turquoise;
+    padding: 10px;
+    left: 50%;
+    height: 100px;
+    text-align: center;
+    width: 500px;
+    margin-left: -19%;
+    z-index: 1111;
+}
+
+.overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    opacity: 0.5;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+ul li{
+    list-style-type: none;
+    border: 1px solid #ccc;
+    background: rgba(255,255,255,0.5);
+    margin-bottom: 10px;
+    width: 97%;
+    box-shadow: 2px 2px 50px #fff;
+}
+
+header{
+	background: rgba(255,255,255,0.5);
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.center{
+	text-align: center;
+}
+
+
+.searchBox input {
+    padding: 10px;
+    width: 50%;
+}
+
+h2.Main_title {
+    width: 100%;
+    background: #B18B61;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.header_title {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 40px;
+    padding-top: 11px;
+    border-top: 10px solid #B18B61;
+    background: rgba(255,255,255,0.5);
+    padding-bottom: 10px;
+}
+
+
+input[type=checkbox] {
+    display: block;
+    width: 128px;
+    height: 128px;
+    -webkit-appearance: none;
+    outline: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    z-index: 1111;
+    border-bottom: 5px solid #000;
+    margin-bottom: 5px;
+    zoom: 0.5;
+
+}
+
+.chicken input[type=checkbox]:not(:checked) {
+    background-image: url(../img/chicken_unchecked.png);
+}
+
+.chicken input[type=checkbox]:checked {
+    background-image: url(../img/chicken_checked.png);
+}
+
+.pork input[type=checkbox]:not(:checked) {
+    background-image: url(../img/pigun.png);
+}
+
+.pork input[type=checkbox]:checked {
+    background-image: url(../img/pigck.png);
+}
+
+.fish input[type=checkbox]:not(:checked) {
+    background-image: url(../img/fishun.png);
+}
+
+.fish input[type=checkbox]:checked {
+    background-image: url(../img/fishck.png);
+}
+
+.beef input[type=checkbox]:not(:checked) {
+    background-image: url(../img/beefck.png);
+}
+
+.beef input[type=checkbox]:checked {
+    background-image: url(../img/beefun.png);
+}
+
+.veggie input[type=checkbox]:not(:checked) {
+    background-image: url(../img/broccoliun.png);
+}
+
+.veggie input[type=checkbox]:checked {
+    background-image: url(../img/broccoli.png);
+}
+
+.pasta input[type=checkbox]:checked {
+    background-image: url(../img/pastack.png);
+}
+
+.pasta input[type=checkbox]:not(:checked) {
+    background-image: url(../img/pastaun.png);
+}
+
+.rice input[type=checkbox]:checked {
+    background-image: url(../img/bowlck.png);
+}
+
+.rice input[type=checkbox]:not(:checked) {
+    background-image: url(../img/bowlun.png);
+}
+
+
+
+
+.settings label{
+	display: inline-block;
+	overflow: hidden;
+	margin-left: 10px;
+}
+
+
+.settings{
+	background-color: #fff;
+	padding: 10px;
+	text-align: center;
+	position: relative;
+	top: 100px;
+	width: 600px;
+	margin: 0 auto;
+	border-top: 20px solid #ccc;
+}
+
+form.settings input[type="submit"] {
+    cursor: pointer;
+    -webkit-appearance: none;
+    border: none;
+    padding: 10px;
+    clear: both;
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+    background: #B18B61;
+    font-size: 1.22em;
+    width: 100%;
+    margin-top: 10px;
+    outline: none;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+}
+
+form.settings input[type="submit"]:hover{
+    background-color: #ccc;
+    color: #000;
+}
+.random_selection {
+    position: relative;
+    top: 139px;
+    text-align: center;
+}
+
+img.heart_icon {
+    position: absolute;
+    margin-top: -2px;
+    margin-left: 4px;
+}
+
+ img.GF_icon{
+    position: absolute;
+    margin-top: -12px;
+ }
+
+ .allRecipes li {
+    display: inline-block;
+    width: 300px;
+    overflow: hidden;
+    height: 400px;
+    margin-left: 15px;
+}
+
+a{
+    text-decoration: none;
+}
