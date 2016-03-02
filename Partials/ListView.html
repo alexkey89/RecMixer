@@ -6,10 +6,16 @@
     </div>
     <br />
 
-    <p ng-click="jinny=true">Ask Jinny</p>
+    <p class="genie" ng-click="jinny=true"><img src="img/genie.png" height="150" width="100" /></p>
+    
     <div class="overlay" ng-show="jinny" ng-click="jinny=false"></div>
-    <div class="popup" ng-show="jinny">
-        Random Recipe: {{randomRecipe.Title}}
+    
+    <div class="popup" ng-show="jinny" ng-model="Recipe">
+        <a href="#/view3/{{Recipe.indexOf(randomRecipe)}}">
+            Why don't you try? 
+            <h3>{{randomRecipe.Title}}</h3>
+            <p><img ng-src="{{randomRecipe.img}}" height="200" width="320"></p>
+        </a>
     </div>
 
     <ul class="center allRecipes">
@@ -17,7 +23,7 @@
 
             <a href="#/view3/{{Recipe.indexOf(Rec)}}">
 
-                <p>{{Rec.Title}}</p>
+                <p class="title">{{Rec.Title}}</p>
 
                 <p>Level: <strong>{{Rec.Level}}</strong>
                 </p>

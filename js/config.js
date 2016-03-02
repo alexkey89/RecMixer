@@ -6,6 +6,10 @@ var RecipeMixerModule = angular.module("RecipeMixerModule", ['ngRoute', 'mainApp
 
     RecipeMixerModule.config(function($routeProvider){
     	$routeProvider
+            .when('/view0',{
+                controller: 'menuController',
+                templateUrl: 'index.html'
+            })
     		.when('/view1',{
     			controller: 'ListController',
     			templateUrl: 'Partials/landingPage.html'

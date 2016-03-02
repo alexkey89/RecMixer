@@ -1,7 +1,14 @@
 
 var mainAppController = angular.module('mainAppController', []);
 
-mainAppController.controller('ListController', ['$scope', '$http', function ($scope, $http, $randomQuote){
+mainAppController.controller('menuController', ['$scope', '$http', function ($scope, $http){
+
+
+}]);
+
+
+mainAppController.controller('ListController', ['$scope', '$http', function ($scope, $http){
+
 
     $http.get('js/db.json').success(function(data){
 
@@ -17,6 +24,7 @@ mainAppController.controller('ListController', ['$scope', '$http', function ($sc
 
 
 mainAppController.controller('DetailsController', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams){
+
 
     $http.get('js/db.json').success(function(data){
 
