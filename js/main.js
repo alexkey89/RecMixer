@@ -1,11 +1,6 @@
 
 var mainAppController = angular.module('mainAppController', []);
 
-mainAppController.controller('menuController', ['$scope', '$http', function ($scope, $http){
-
-
-}]);
-
 
 mainAppController.controller('ListController', ['$scope', '$http', function ($scope, $http){
 

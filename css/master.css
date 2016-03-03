@@ -97,7 +97,7 @@ h2.Main_title {
 }
 
 
-input[type=checkbox] {
+form[name="settings"] input[type=checkbox] {
     display: block;
     width: 128px;
     height: 128px;
@@ -288,4 +288,5 @@ a.btn {
     cursor: pointer;
     margin-left: 10px;
 }
+
 

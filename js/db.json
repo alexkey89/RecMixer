@@ -31,7 +31,7 @@
 		{
 		"Title": "Makaronia tou fournou",
 		"Description": "finger licking good!",
-		"Level": "Medium",
+		"Level": "Hard",
 		"img":"img/pastitsio.jpg",
 		"Healthiness": 2,
 		"Ingredients": [
@@ -40,6 +40,21 @@
 			"Olive oil",
 			"Mince beef",
 			"tomato puree"
+		],
+		"glutenFree": false
+	},
+	{
+		"Title": "Thai Prawns",
+		"Description": "Prawn blend mix with fish oil",
+		"Level": "Easy",
+		"img":"img/thaiprawns.jpg",
+		"Healthiness": 5,
+		"Ingredients": [
+			"Prawns",
+			"Parsely",
+			"Olive oil",
+			"Oregano",
+			"Cumin"
 		],
 		"glutenFree": false
 	}]

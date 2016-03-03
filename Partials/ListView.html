@@ -2,9 +2,16 @@
 
     <div class="center searchBox">
         <h2>Search Recipes</h2>
-        <input type="text" ng-model="query" placeholder="e.g Sweet and sour chicken..." autofocus />
+        <input type="text" ng-model="query" placeholder="e.g Sweet and sour chicken..." autofocus  />
     </div>
     <br />
+
+    <form>
+        <input type="radio" ng-model="query" name="test" value="Beef">Beef</input>
+        <input type="radio" ng-model="query" name="test" value="Chicken">Chicken</input>
+        <input type="radio" ng-model="query" name="test" value="Fish">Fish</input>
+        <input type="radio" ng-checked="true" ng-model="query" name="test" value="">All</input>
+    </form>
 
     <p class="genie" ng-click="jinny=true"><img src="img/genie.png" height="150" width="100" /></p>
     
@@ -19,12 +26,12 @@
     </div>
 
     <ul class="center allRecipes">
-        <li class="recipes" ng-repeat="Rec in Recipe | limitTo: 3 | filter: query ">
+        <li class="recipes" ng-repeat="Rec in Recipe | limitTo: 4 | filter: query ">
 
             <a href="#/view3/{{Recipe.indexOf(Rec)}}">
 
                 <p class="title">{{Rec.Title}}</p>
-
+ 
                 <p>Level: <strong>{{Rec.Level}}</strong>
                 </p>
 
@@ -34,7 +41,7 @@
                     *Gluten Free <img class="GF_icon" src="img/GF.png" height="40" width="40" />
                 </p>
 
-                <p><img ng-src="{{Rec.img}}" height="120" width="180" />
+                <p><img ng-src="{{Rec.img}}" height="140" width="180" />
                 </p>
 
 
