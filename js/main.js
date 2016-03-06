@@ -64,7 +64,7 @@ RecipeMixerModule.controller("ListController", function($scope, $location, callD
         }
 
 
-        //get randome Recipe
+        //get random Recipe
         $scope.randomRecipe = $scope.Recipe[Math.floor(Math.random() * $scope.Recipe.length)];
 
 
