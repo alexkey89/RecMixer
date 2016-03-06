@@ -6,27 +6,26 @@
     </div>
     <br />
 
+        <label>Order by:
+                <select ng-model="RecOrder">
+                    <option value="Title">Name</option>
+                    <option value="-Healthiness">Healthiness</option>
+                    <option value="Level">Level</option>
+                </select>
+            </label>
+
+
     <form>
+
         <input type="radio" ng-model="query" name="test" value="Beef">Beef</input>
         <input type="radio" ng-model="query" name="test" value="Chicken">Chicken</input>
         <input type="radio" ng-model="query" name="test" value="Fish">Fish</input>
         <input type="radio" ng-checked="true" ng-model="query" name="test" value="">All</input>
     </form>
 
-    <p class="genie" ng-click="jinny=true"><img src="img/genie.png" height="150" width="100" /></p>
-    
-    <div class="overlay" ng-show="jinny" ng-click="jinny=false"></div>
-    
-    <div class="popup" ng-show="jinny" ng-model="Recipe">
-        <a href="#/view3/{{Recipe.indexOf(randomRecipe)}}">
-            Why don't you try? 
-            <h3>{{randomRecipe.Title}}</h3>
-            <p><img ng-src="{{randomRecipe.img}}" height="200" width="320"></p>
-        </a>
-    </div>
 
     <ul class="center allRecipes">
-        <li class="recipes" ng-repeat="Rec in Recipe | limitTo: 4 | filter: query ">
+        <li class="recipes" ng-repeat="Rec in Recipe | limitTo: 4 | filter: query | orderBy: RecOrder ">
 
             <a href="#/view3/{{Recipe.indexOf(Rec)}}">
 

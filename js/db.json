@@ -11,7 +11,8 @@
 			"Olive oil",
 			"Chicken"
 		],
-		"glutenFree": false
+		"glutenFree": false,
+		"Type":"Chicken"
 	}, 
 	{
 		"Title": "Chicken salad",

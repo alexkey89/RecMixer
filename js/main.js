@@ -1,25 +1,46 @@
 
-var mainAppController = angular.module('mainAppController', []);
+var mainAppController = angular.module('mainAppController', ['ngAnimate']);
 
 
-mainAppController.controller('ListController', ['$scope', '$http', function ($scope, $http){
+// mainAppController.controller('ListController', ['$scope', '$http', function ($scope, $http){
 
 
-    $http.get('js/db.json').success(function(data){
+//     $http.get('js/db.json').success(function(data){
 
-        $scope.Recipe = data.Recipe;
-        $scope.RecipeOrder = 'name';
+//         $scope.Recipe = data.Recipe;
+//         $scope.RecipeOrder = 'name';
 
-        //get randome Recipe
-        $scope.randomRecipe = $scope.Recipe[Math.floor(Math.random() * $scope.Recipe.length)];
+//         //get randome Recipe
+//         $scope.randomRecipe = $scope.Recipe[Math.floor(Math.random() * $scope.Recipe.length)];
        
-    });
+//     });
 
-}]);
+// }]);
+
+//db services - promise
+
+    mainAppController.service('callDbService', function($http, $q){
+            
+        var deferred = $q.defer()
+            
+            $http.get('js/db.json').then(function(data){
+                
+                deferred.resolve(data)
+            
+            })
+
+        
+     this.getRecipes = function(){
+        
+        return deferred.promise;
+     }
+
+                
+    })
 
 
+//Details controller
 mainAppController.controller('DetailsController', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams){
-
 
     $http.get('js/db.json').success(function(data){
 
@@ -40,47 +61,32 @@ mainAppController.controller('DetailsController', ['$scope', '$http', '$routePar
 
 
 
+    //List controller
+	RecipeMixerModule.controller("ListController", function($scope,callDbService) {
+
+            var promise = callDbService.getRecipes()
+
+            promise.then(function(data){
+
+            $scope.Recipe = data.data.Recipe;
+            $scope.RecOrder = 'Title';
 
 
-// //ajax request
-//     RecipeMixerModule.service('simpleService', function($http, $q){
+            for (var i=0; i< $scope.Recipe.length; i++){
+                console.log(data.data.Recipe[i].Level)    
+            }
             
-//         var deferred = $q.defer()
+
+            //get randome Recipe
+            $scope.randomRecipe = $scope.Recipe[Math.floor(Math.random() * $scope.Recipe.length)];
+
+
+
             
-//             $http.get('js/db.json').then(function(data){
-                
-//                 deferred.resolve(data)
-            
-//             })
+            })
 
-		
-//      this.getRecipes = function(){
-	 	
-//         return deferred.promise;
-// 	 }q
+    })
 
-    			
-//     })
-
-
-//     //controller
-// 	RecipeMixerModule.controller("mainController", function($scope,simpleService) {
-
-//             var promise = simpleService.getRecipes()
-
-//             promise.then(function(data){
-
-//                 $scope.isArray = angular.isArray;
-//                 $scope.Recipes = data.data.Recipe;
-                    
-//                 for (var i=0; i< $scope.Recipes.length; i++){
-//                     //console.log(data.data.Recipe[i].Title)
-//                 }
-//                 //console.log(data.data.Recipe)
-            
-//             })
-
-//     })
 
 
 
