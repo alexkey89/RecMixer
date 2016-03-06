@@ -1,48 +1,30 @@
-
-var mainAppController = angular.module('mainAppController', ['ngAnimate']);
-
-
-// mainAppController.controller('ListController', ['$scope', '$http', function ($scope, $http){
-
-
-//     $http.get('js/db.json').success(function(data){
-
-//         $scope.Recipe = data.Recipe;
-//         $scope.RecipeOrder = 'name';
-
-//         //get randome Recipe
-//         $scope.randomRecipe = $scope.Recipe[Math.floor(Math.random() * $scope.Recipe.length)];
-       
-//     });
-
-// }]);
+var mainAppController = angular.module('mainAppController', []);
 
 //db services - promise
 
-    mainAppController.service('callDbService', function($http, $q){
-            
-        var deferred = $q.defer()
-            
-            $http.get('js/db.json').then(function(data){
-                
-                deferred.resolve(data)
-            
-            })
+mainAppController.service('callDbService', function($http, $q) {
 
-        
-     this.getRecipes = function(){
-        
-        return deferred.promise;
-     }
+    var deferred = $q.defer()
 
-                
+    $http.get('js/db.json').then(function(data) {
+
+        deferred.resolve(data)
+
     })
+
+    this.getRecipes = function() {
+
+        return deferred.promise;
+    }
+
+
+})
 
 
 //Details controller
-mainAppController.controller('DetailsController', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams){
+mainAppController.controller('DetailsController', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
 
-    $http.get('js/db.json').success(function(data){
+    $http.get('js/db.json').success(function(data) {
 
         $scope.Recipe = data.Recipe;
 
@@ -50,9 +32,9 @@ mainAppController.controller('DetailsController', ['$scope', '$http', '$routePar
         $scope.whichRecipe = $routeParams.RecId;
 
         //prev - next btn
-        $routeParams.RecId > 0 ? $scope.prevRec = Number($routeParams.RecId)-1 : $scope.prevRec = $scope.Recipe.length-1;
+        $routeParams.RecId > 0 ? $scope.prevRec = Number($routeParams.RecId) - 1 : $scope.prevRec = $scope.Recipe.length - 1;
 
-        $routeParams.RecId < $scope.Recipe.length-1 ? $scope.nextRec = Number($routeParams.RecId)+1 : $scope.nextRec = 0;
+        $routeParams.RecId < $scope.Recipe.length - 1 ? $scope.nextRec = Number($routeParams.RecId) + 1 : $scope.nextRec = 0;
 
 
     });
@@ -61,33 +43,31 @@ mainAppController.controller('DetailsController', ['$scope', '$http', '$routePar
 
 
 
-    //List controller
-	RecipeMixerModule.controller("ListController", function($scope,callDbService) {
-
-            var promise = callDbService.getRecipes()
-
-            promise.then(function(data){
-
-            $scope.Recipe = data.data.Recipe;
-            $scope.RecOrder = 'Title';
+//List controller
+RecipeMixerModule.controller("ListController", function($scope, $location, callDbService) {
 
 
-            for (var i=0; i< $scope.Recipe.length; i++){
-                console.log(data.data.Recipe[i].Level)    
-            }
-            
+    $scope.submitForm = function() {
+        $location.path('/view2');
+    }
 
-            //get randome Recipe
-            $scope.randomRecipe = $scope.Recipe[Math.floor(Math.random() * $scope.Recipe.length)];
+    var promise = callDbService.getRecipes()
+
+    promise.then(function(data) {
+
+        $scope.Recipe = data.data.Recipe;
+        $scope.RecOrder = 'Title';
 
 
+        for (var i = 0; i < $scope.Recipe.length; i++) {
+            //console.log(data.data.Recipe[i].Level)
+        }
 
-            
-            })
+
+        //get randome Recipe
+        $scope.randomRecipe = $scope.Recipe[Math.floor(Math.random() * $scope.Recipe.length)];
+
 
     })
 
-
-
-
-
+})
