@@ -1,5 +1,6 @@
+
 <form name="settings" class="settings" ng-submit="submitForm()">
-    
+<!--     
     <label name="chicken" class="chicken">
         <input type="checkbox" ng-model="query" value="chicken">Chicken
     </label>
@@ -16,10 +17,6 @@
         <input type="checkbox" value="beef">Beef
     </label>
 
-    <label name="veggie" class="veggie">
-        <input type="checkbox" value="veggie">Veggie
-    </label>
-
     <label name="pasta" class="pasta">
         <input type="checkbox" value="pasta">Pasta
     </label>
@@ -28,13 +25,19 @@
         <input type="checkbox" value="rice">Rice
     </label>
 
-    <label name="glutenFree" class="glutenFree">
-        <input type="checkbox" value="glutenFree">Gluten Free
-    </label>
+    <input type="submit" /> -->
 
-    <input type="submit" />
+        <label name="{{cat}}" class="{{cat}}" ng-repeat="cat in getCategories()">
+            <b><input name="whatever" type="checkbox" ng-model="filter[cat]" value="{{cat}}" /> {{cat}}</b>
+        </label>
+
+
+        <input type="submit"></input>
+
+            
 
 </form>
+
 
 
 <div class="random_selection">

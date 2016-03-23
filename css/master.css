@@ -100,7 +100,7 @@ h2.Main_title {
 }
 
 
-form[name="settings"] input[type=checkbox] {
+/*form[name="settings"] input[type=checkbox] {
     display: block;
     width: 128px;
     height: 128px;
@@ -116,7 +116,7 @@ form[name="settings"] input[type=checkbox] {
     margin-bottom: 5px;
     zoom: 0.5;
 
-}
+}*/
 
 .pointer{
     cursor: pointer;
@@ -209,7 +209,7 @@ form[name="settings"] input[type=checkbox] {
 	text-align: center;
 	position: relative;
 	top: 100px;
-	width: 702px;
+/*	width: 702px;*/
 	margin: 0 auto;
 	border-top: 20px solid #ccc;
 }
@@ -318,4 +318,12 @@ a.btn {
     margin-left: 10px;
 }
 
+.instructions {
+    width: 500px;
+    padding: 10px;
+    margin: 0 auto;
+    position: relative;
+    border: 2px dashed burlywood;
+    background-color: #fff;
+}
 
