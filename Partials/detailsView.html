@@ -15,7 +15,9 @@
 		
 		<p>Level: {{Recipe[whichRecipe].Level}}</p>
 
-		<p>Ingredients: {{Recipe[whichRecipe].Ingredients}}</p>
+		<p ng-repeat="ing in Recipe[whichRecipe].Ingredients">
+			<span>{{ing.name}} x {{ing.num}}</span>
+		</p>
 
 		<p>{{Recipe[whichRecipe].Description}}</p> 
 		

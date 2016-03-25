@@ -54,7 +54,6 @@ RecipeMixerModule.controller("ListController", function ($scope, $location, $roo
 
   }
 
-<<<<<<< Updated upstream
   $scope.Recipe = db.data.Recipe;
   $scope.RecOrder = 'Title';
 
@@ -62,10 +61,6 @@ RecipeMixerModule.controller("ListController", function ($scope, $location, $roo
   $scope.randomRecipe = $scope.Recipe[Math.floor(Math.random() * $scope.Recipe.length)];
 
   //$scope.RecArray = Object.keys($scope.Recipe).map(key => $scope.Recipe[key])
-=======
-        //filter checkboxes
-        $scope.filter = {};
->>>>>>> Stashed changes
 
 
   $scope.getCategories = function () {
@@ -76,18 +71,9 @@ RecipeMixerModule.controller("ListController", function ($scope, $location, $roo
     });
   };
 
-<<<<<<< Updated upstream
   $scope.filterByCategory = function (rec) {
     return filterSettings[rec.category] || noFilter(filterSettings);
   };
-=======
-         $scope.ShowSelected = function() {
-              console.log($scope.filter);
-              alert(JSON.stringify($scope.filter));
-         };
-
-
->>>>>>> Stashed changes
 
   function noFilter(filterObj) {
     for (var key in filterObj) {
