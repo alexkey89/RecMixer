@@ -6,7 +6,6 @@
     "Description": "A healthy lunch option",
     "Level": "Easy",
     "img": 0,
-    "Healthiness": 5,
     "Ingredients": [{"name":"Chicken", "num": 1},{"name":"Peppers", "num": 2}],
     "Vegetarian": false,
     "Vegan": false,
@@ -19,7 +18,6 @@
     "Description": "Fun and easy !",
     "Level": "Easy",
     "img": 0,
-    "Healthiness": 1,
     "Ingredients": [{"name":"Ham", "num": 1},{"name":"Peppers", "num": 3}],
     "Vegetarian": false,
     "Vegan": false,
@@ -32,14 +30,20 @@
     "Description": "Especially for cheese lovers",
     "Level": "Easy",
     "img": 0,
-    "Healthiness": 3,
     "Ingredients": [{"name":"Chicken", "num": 1},{"name":"Potato", "num": 3}],
     "Vegetarian": true,
     "Vegan": false,
     "glutenFree": true,
     "category":"Starches and Legumes",
     "Instructions": "Thinly slice potato and add to saucepan of water. Boil until softened. Cube the onion and place it in the saucepan with the potato. Add the milk, cover saucepan and bring to the boil. Then drain. Butter an ovenproof dish and layer half of the potato. Sprinkle half of the onions on top then season. Sprinkle cheese on top.Add rest of the onion and cheese. Enjoy! \nBake at 190c for 35mins or until crispy and golden. Enjoy!"
-  }]
+  }],
+
+  "Healthiness": {
+    "Chicken" : 2,
+    "Potato": 1,
+    "Ham": 1,
+    "Peppers": 3
+  }
 }
 
    
