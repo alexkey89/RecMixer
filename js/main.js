@@ -1,6 +1,6 @@
 "use strict";
 
-var mainAppController = angular.module('mainAppController', ['ngSanitize', 'ngAnimate']);
+var mainAppController = angular.module('mainAppController', ['ngAnimate']);
 
 //Details controller
 mainAppController.controller('DetailsController', ['$scope', '$http', '$rootScope', '$routeParams', 'db', function ($scope, $http, $rootScope, $routeParams, db) {
