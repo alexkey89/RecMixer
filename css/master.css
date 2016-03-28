@@ -1,0 +1,711 @@
+*{
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-text-size-adjust: 100%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body, h1{
+	font-family: helvetica;
+	font-weight: 100;
+}
+
+body{
+	/*background: url('../img/bg2.png') no-repeat;*/
+      background: url(../img/bg2.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+a{
+  color: darkblue;
+}
+.strikethrough{
+  text-decoration: line-through;
+}
+
+img {
+    border: 2px dotted #ccc;
+    /*display: block;*/
+    /* padding: 10px; */
+    /*background: rgba(255, 255, 255, 0.9);*/
+    border-width: 4px;
+    margin-top: 13px;
+    margin-bottom: 14px;
+}
+
+/*menu*/
+.open {
+  position: absolute;
+/*position: fixed;
+*/  left: 40px;
+  width: 50px;
+  height: 50px;
+  display: block;
+  cursor: pointer;
+  transition: opacity 0.2s linear;
+  z-index: 222;
+}
+
+.open:hover { opacity: 0.8; }
+
+.open span {
+  display: block;
+  float: left;
+  clear: both;
+  height: 4px;
+  width: 40px;
+  border-radius: 40px;
+  background-color: #fff;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.open span:nth-child(1) {
+  margin-top: 10px;
+  z-index: 9;
+}
+
+.open span:nth-child(2) { margin-top: 25px; }
+
+.open span:nth-child(3) { margin-top: 40px; }
+
+.sub-menu {
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  height: 0;
+  width: 0;
+  right: 0;
+  top: 0;
+  position: absolute;
+  background-color: rgba(38, 84, 133, 0.54);
+  border-radius: 50%;
+  z-index: 18;
+  overflow: hidden;
+}
+
+.sub-menu li {
+  display: block;
+  float: right;
+  clear: both;
+  height: auto;
+  margin-right: -160px;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.sub-menu li:first-child { margin-top: 180px; }
+
+.sub-menu li:nth-child(1) { -webkit-transition-delay: 0.05s; }
+
+.sub-menu li:nth-child(2) { -webkit-transition-delay: 0.10s; }
+
+.sub-menu li:nth-child(3) { -webkit-transition-delay: 0.15s; }
+
+.sub-menu li:nth-child(4) { -webkit-transition-delay: 0.20s; }
+
+.sub-menu li:nth-child(5) { -webkit-transition-delay: 0.25s; }
+
+.sub-menu li a {
+  color: #fff;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  width: 100%;
+  display: block;
+  float: left;
+  line-height: 40px;
+}
+
+.oppenned .sub-menu {
+  opacity: 1;
+  height: 400px;
+  width: 400px;
+}
+
+.oppenned span:nth-child(2) { overflow: visible; }
+
+.oppenned span:nth-child(1),
+.oppenned span:nth-child(3) {
+  z-index: 100;
+  transform: rotate(45deg);
+}
+
+.oppenned span:nth-child(1) { transform: rotate(45deg) translateY(12px) translateX(12px); }
+
+.oppenned span:nth-child(2) {
+  height: 400px;
+  width: 400px;
+  right: -211px;
+  top: -160px;
+  border-radius: 50%;
+  background-color: rgba(38, 84, 133, 0.54);
+}
+
+.oppenned span:nth-child(3) { transform: rotate(-45deg) translateY(-10px) translateX(10px); }
+
+.oppenned li { margin-right: 168px; }
+
+/*end of menu*/
+
+form#set_list {
+    top: 10px;
+}
+
+.footnote{
+    background: rgba(000,000,000,0.5);
+    color: #fff;
+    padding: 10px;
+}
+
+.instruction.step1{
+    padding: 0;
+    margin: 0;
+}
+
+.hide{
+    display: none;
+}
+
+.popup {
+    position: fixed;
+    background: rgba(255,255,255,0.8);
+    padding: 10px;
+    left: 50%;
+    height: 370px;
+    top: 100px;
+    text-align: center;
+    width: 500px;
+    margin-left: -19%;
+    z-index: 1111;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+}
+
+.overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    opacity: 0.5;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+/*ul li{
+    list-style-type: none;
+    border: 1px solid #ccc;
+    background: rgba(255,255,255,0.5);
+    margin-bottom: 10px;
+    width: 97%;
+    box-shadow: 2px 2px 50px #fff;
+}
+*/
+
+.allRecipes li{
+    list-style-type: none;
+    border: 1px solid #ccc;
+    background: rgba(255,255,255,0.5);
+    margin-bottom: 10px;
+    width: 97%;
+    box-shadow: 2px 2px 50px #fff;
+}
+header{
+	background: rgba(255,255,255,0.5);
+	position: fixed;
+	top: 0;
+	width: 100%;
+  height: 0;
+  z-index: 222;
+}
+
+.center{
+	text-align: center;
+}
+
+
+.searchBox input {
+    padding: 10px;
+    width: 50%;
+}
+
+h2.Main_title {
+    width: 100%;
+    background: #B18B61;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.header_title {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 40px;
+    padding-top: 11px;
+    border-top: 10px solid #B18B61;
+    background: rgba(255,255,255,0.8);
+    padding-bottom: 10px;
+}
+
+
+/*form[name="settings"] input[type=checkbox] {
+    display: block;
+    width: 128px;
+    height: 128px;
+    -webkit-appearance: none;
+    outline: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    z-index: 1111;
+    margin-bottom: 5px;
+    zoom: 0.5;
+}
+*/
+form[name="settings"] input[type=checkbox] {
+    display: block;
+    width: 128px;
+    height: 128px;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    z-index: 1111;
+    /* border-bottom: 5px solid #000; */
+    margin-bottom: 5px;
+    background-color: transparent;
+    zoom: 0.5;
+}
+
+.zoom_small{
+  zoom: 0.6;
+}
+
+.pointer{
+    cursor: pointer;
+}
+.x_btn.pointer {
+    text-align: right;
+    padding-right: 14px;
+    font-size: 20px;
+    font-weight: bold;
+    color: teal;
+}
+
+.chicken input[type=checkbox]:not(:checked) {
+    background-image: url(../img/chicken_unchecked.png);
+}
+
+.chicken input[type=checkbox]:checked {
+    background-image: url(../img/chicken_checked.png);
+}
+
+.Starches input[type=checkbox]:not(:checked) {
+    background-image: url(../img/patates.png);
+}
+
+.Starches input[type=checkbox]:checked {
+    background-image: url(../img/patatesun.png);
+}
+
+.Fish input[type=checkbox]:not(:checked) {
+    background-image: url(../img/fishun.png);
+}
+
+.Fish input[type=checkbox]:checked {
+    background-image: url(../img/fishck.png);
+}
+
+.Saturated input[type=checkbox]:not(:checked) {
+    background-image: url(../img/beefck.png);
+}
+
+.Saturated input[type=checkbox]:checked {
+    background-image: url(../img/beefun.png);
+}
+
+.Vegetables input[type=checkbox]:not(:checked) {
+    background-image: url(../img/broccoliun.png);
+}
+
+.Vegetables input[type=checkbox]:checked {
+    background-image: url(../img/broccoli.png);
+}
+
+.pasta input[type=checkbox]:checked {
+    background-image: url(../img/pastack.png);
+}
+
+.pasta input[type=checkbox]:not(:checked) {
+    background-image: url(../img/pastaun.png);
+}
+
+.Dairy input[type=checkbox]:checked {
+    background-image: url(../img/Dairyun.png);
+}
+
+.Dairy input[type=checkbox]:not(:checked) {
+    background-image: url(../img/Dairy.png);
+}
+
+.glutenFree input[type=checkbox]:checked {
+    background-image: url(../img/GF_active.png);
+}
+
+.glutenFree input[type=checkbox]:not(:checked) {
+    background-image: url(../img/GF_non.png);
+}
+
+
+
+
+.settings label {
+    display: inline-block;
+    width: 144px;
+    vertical-align: top;
+}
+input[name="whatever"] {
+    margin: 0 auto;
+}
+
+
+.settings{
+	background-color: #fff;
+	padding: 10px;
+	text-align: center;
+	position: relative;
+	top: 100px;
+/*	width: 702px;*/
+	margin: 0 auto;
+	border-top: 20px solid #ccc;
+}
+
+form.settings input[type="submit"] {
+    cursor: pointer;
+    -webkit-appearance: none;
+    border: none;
+    padding: 10px;
+    clear: both;
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+    background: #B18B61;
+    font-size: 1.22em;
+    width: 100%;
+    margin-top: 10px;
+    outline: none;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+}
+
+form.settings input[type="submit"]:hover{
+    background-color: #ccc;
+    color: #000;
+}
+.random_selection {
+    position: relative;
+    top: 139px;
+    text-align: center;
+}
+
+img.heart_icon {
+    position: absolute;
+    margin-top: -2px;
+    margin-left: 4px;
+}
+
+ img.GF_icon{
+    position: absolute;
+    margin-top: -12px;
+ }
+
+ .allRecipes li {
+    display: inline-block;
+    width: 300px;
+    overflow: hidden;
+    height: 400px;
+    margin-left: 15px;
+    vertical-align: top;
+}
+
+a{
+    text-decoration: none;
+}
+.allRecipes li p {
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.allRecipes li p.title {
+    background: #B18B61;
+    font-weight: bold;
+    text-shadow: 1px 2px 5px #666;
+    color: #fff;
+}
+
+/*nav{
+    position: absolute;
+}
+
+nav a {
+    color: #fff;
+}
+
+nav ul li {
+    background: red;
+    overflow: hidden;
+    text-align: center;
+    float: left;
+    border: none;
+    background: none;
+    box-shadow: none;
+    width: 60px;
+}*/
+
+.genie{
+/*    position: absolute;
+*/    cursor: pointer;
+text-align: center;
+    transition: all 0.2s;
+    -webkit-transition: 0.2s;
+}
+
+p.genie img{
+    -webkit-filter: drop-shadow(0px -1px 4px #222);
+    filter: drop-shadow(0px -1px 4px #222);
+}
+
+.genie:hover{
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+}
+
+a.btn {
+    font-size: 2em;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.instructions {
+    width: 500px;
+    padding: 10px;
+    margin: 0 auto;
+    position: relative;
+    border: 2px dashed burlywood;
+    background-color: #fff;
+}
+
+nav{
+  position: absolute;
+  z-index: 222;
+}
+
+/*animate*/
+/* make our pages be full width and full height */
+/* positioned absolutely so that the pages can overlap each other as they enter and leave */
+.page        {
+    /*z-index: -999;*/
+    bottom:0; 
+    padding-top:200px;
+    position:absolute; 
+    text-align:center;
+    top:0;  
+    width:100%; 
+    overflow-x: hidden;
+}
+
+.page h1    { font-size:60px; }
+.page a     { margin-top:50px; }
+
+/* PAGES (specific colors for each page)
+============================================================================= */
+/*.page-list      { background:#00D0BC; color:#00907c; }
+.page-details     { background:#E59400; color:#a55400; }
+
+/* ANIMATIONS
+============================================================================= */
+
+/* leaving animations ----------------------------------------- */
+/* rotate and fall */
+@keyframes rotateFall {
+    0%      { transform: rotateZ(0deg); }
+    20%     { transform: rotateZ(10deg); animation-timing-function: ease-out; }
+    40%     { transform: rotateZ(17deg); }
+    60%     { transform: rotateZ(16deg); }
+    100%    { transform: translateY(100%) rotateZ(17deg); }
+}
+
+/* slide in from the bottom */
+@keyframes slideOutLeft {
+    to      { transform: translateX(-100%); }
+}
+
+/* rotate out newspaper */
+@keyframes rotateOutNewspaper {
+    to      { transform: translateZ(-3000px) rotateZ(360deg); opacity: 0; }
+}
+
+/* entering animations --------------------------------------- */
+/* scale up */
+@keyframes scaleUp {
+    from    { opacity: 0.3; -webkit-transform: scale(0.8); }
+}
+
+/* slide in from the right */
+@keyframes slideInRight {
+    from    { transform:translateX(100%); }
+    to      { transform: translateX(0); }
+}
+
+/* slide in from the bottom */
+@keyframes slideInUp {
+    from    { transform:translateY(100%); }
+    to      { transform: translateY(0); }
+}
+
+    .ng-enter       { z-index: 8888; }
+    .ng-leave       { z-index: 9999; }
+
+    /* page specific animations ------------------------ */
+
+    /* home -------------------------- */
+    .page-list.ng-enter         { animation: scaleUp 0.5s both ease-in; }
+    .page-list.ng-leave         { transform-origin: 0% 0%; animation: rotateFall 1s both ease-in; }
+
+    /* about ------------------------ */
+    .page-details.ng-enter        { animation:slideInRight 0.5s both ease-in; }
+    .page-details.ng-leave        { animation:slideOutLeft 0.5s both ease-in; }
+
+
+
+/**ipad - portrait**/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+  .popup {
+    top: 304px;
+    margin-left: -32%;
+  }
+}
+/**end of ipad - portrait**/
+
+/**iphone 6 - portrait**/
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) { 
+
+.settings label {
+    display: inline-block;
+    width: 90px;
+    vertical-align: top;
+    font-size: 0;
+    zoom: 1;
+}
+
+.allRecipes li {
+    display: inline-block;
+    width: 300px;
+    overflow: hidden;
+    height: 400px;
+    margin-left: -40px;
+    vertical-align: top;
+}
+.instructions{
+  width: initial;
+}
+.popup {
+    position: fixed;
+    background: rgba(255,255,255,0.8);
+    padding: 10px;
+    left: 57.4%;
+    height: 370px;
+    top: 200px;
+    text-align: center;
+    width: 330px;
+    /*margin-left: -47%;*/
+    z-index: 1111;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+}
+
+}
+
+/**end of iphone6 - portrait**/
+
+/**iphone 6 - portrait**/
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) { 
+    .popup {
+    left: 40%;
+    height: 370px;
+    zoom: 0.7;
+    top: 125px;
+    margin-left: -19%;
+  }
+}
+
+/**end of iphone 6 landscape**/
+
+/**iphone 5 portrait**/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : portrait) { 
+  .instructions{
+    width: inherit;
+  }
+  .popup {
+    width: 288px;
+    margin-left: -49%; 
+  }
+  .popup img{
+    zoom: 0.9;
+  }
+  .allRecipes li{
+    margin-left: -38px;
+  }
+
+}
+
+/**end of iphone 5 portrait**/
+
+/**iphone 5 landscape**/
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+and (orientation: landscape){
+.popup {
+    left: 45%;
+    height: 370px;
+    zoom: 0.6;
+    top: 130px;
+    margin-left: -19%;
+}
+}
+
+

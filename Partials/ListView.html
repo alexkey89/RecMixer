@@ -1,0 +1,69 @@
+<section class="container">
+    <h1>Search anything</h1>
+    <div class="center searchBox">
+        <input type="text" ng-model="queryCheck" placeholder="e.g Sweet and sour chicken..." />
+    </div>
+    <br />
+
+        <label>Order by:
+                <select ng-model="RecOrder">
+                    <option value="Title">Name</option>
+                    <option value="-Healthiness">Healthiness</option>
+                    <option value="Level">Level</option>
+                </select>
+            </label>
+
+            <div class="limitResults">
+                <p>Show only
+                <select ng-model="userLimit">
+                        
+                    <option value="2">2</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="all">all</option>
+
+                </select>
+                Recipes</p>
+            </div>
+
+
+            <p>Gluten Free <input type="checkbox" value="glutenFree" ng-model="glutenFree" /></p>
+
+    <form name="settings" class="settings zoom_small" id="set_list">
+        <label class="{{cat}}" ng-repeat="cat in getCategories()">
+            <input name="whatever" type="checkbox" ng-model="filter[cat]" /> {{cat}}
+        </label>
+    </form>
+
+           <div ng-init="search()"></div>
+
+
+    <ul class="center allRecipes">
+
+        <li ng-repeat="Rec in filtered=(Recipe | filter:filterByCategory | orderBy: RecOrder) | filter: queryCheck | limitTo: userLimit | filter: glutenFree" >
+
+            <a href="#/view3/{{Recipe.indexOf(Rec)}}">
+
+                <p class="title">{{Rec.Title}}</p>
+                
+                <p>Healthiness: {{Rec.Healthiness}}</p>
+
+                <p>Level: <strong>{{Rec.Level}}</strong> </p>
+
+                <p class="des">{{Rec.Description}}</p>
+
+                <p ng-if="Rec.glutenFree">
+                    *Gluten Free <img class="GF_icon" src="img/GF.png" height="40" width="40" />
+                </p>
+
+                <p><img ng-src="{{Rec.img}}" height="140" width="180" />
+                </p>
+
+        </li>
+
+        </a>
+    </ul>
+
+    <p class="footnote" ng-model="Rec">All Recipes: {{Recipe.length}}</p>
+</section>

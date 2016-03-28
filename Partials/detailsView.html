@@ -1,0 +1,43 @@
+<section class="RecInfo container center">
+
+<div class="recipe" ng-model="Recipe">
+
+	<a href="#/view3/{{prevRec}}" class="btn btn-left">&lt;</a>
+	
+	<a href="#/view3/{{nextRec}}" class="btn btn-right">&gt;</a>
+
+	<h1>{{Recipe[whichRecipe].name}}</h1>
+
+	<div class="info">
+		<p>{{Recipe[whichRecipe].Title}}</p>
+		
+		<img ng-src="{{Recipe[whichRecipe].img}}" height="120" width="180" />
+		
+		<p>Level: {{Recipe[whichRecipe].Level}}</p>
+
+		<p ng-repeat="ing in Recipe[whichRecipe].Ingredients">
+			<span>{{ing.num}} {{ing.name}}</span>
+		</p>
+
+		<p>{{Recipe[whichRecipe].Description}}</p> 
+		
+		<p>Healthiness: <strong>{{Recipe[whichRecipe].Healthiness}} <img class="heart_icon" src="img/heart.png" height="20" width="20" /></strong></p>
+
+		<p ng-if="Recipe[whichRecipe].Vegan">*Suitable for Vegans!</p>
+
+		<p ng-if="Recipe[whichRecipe].glutenFree">
+			*Gluten Free <img class="GF_icon" src="img/GF.png" height="30" width="30"/>
+		</p> 
+
+		<p class="instructions">How to make: <br /> {{Recipe[whichRecipe].Instructions}}</p> 
+
+	</div>
+
+<br />
+	
+</div>
+
+<a href="#/view2">&laquo; Back to List</a>
+<br />
+<a href="#/view1">&laquo; Back to Home Page</a>
+</section>

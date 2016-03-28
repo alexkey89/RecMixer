@@ -1,0 +1,59 @@
+<h1 class="instruction step1 yo">Search by Category</h1>
+<form name="settings" class="settings" ng-submit="submitForm()">
+    <!--
+        <label name="chicken" class="chicken">
+            <input type="checkbox" ng-model="query" value="chicken">Chicken
+        </label>
+
+        <label name="pork" class="pork">
+            <input type="checkbox" value="pork">Pork
+        </label>
+
+        <label name="fish" class="fish">
+            <input type="checkbox" value="fish">Fish
+        </label>
+
+        <label name="beef" class="beef">
+            <input type="checkbox" value="beef">Beef
+        </label>
+
+        <label name="pasta" class="pasta">
+            <input type="checkbox" value="pasta">Pasta
+        </label>
+
+        <label name="rice" class="rice">
+            <input type="checkbox" value="rice">Rice
+        </label>
+
+        <input type="submit" /> -->
+    
+    <label name="{{cat}}" class="{{cat}}" ng-repeat="cat in getCategories()">
+        <input name="whatever" type="checkbox" ng-model="filter[cat]" value="{{cat}}"/> {{cat}}
+    </label>
+
+    <input type="submit"></input>
+
+
+</form>
+
+
+<div class="random_selection">
+
+    <p>Hey you! Why don't you ask the expert?</p>
+
+    <p class="genie" ng-click="jinny=true"><img src="img/ramsay1.png" height="150" width="150"/></p>
+
+    <div class="overlay" ng-show="jinny" ng-click="jinny=false"></div>
+
+    <div class="popup" ng-show="jinny" ng-model="Recipe">
+        <div ng-click="jinny=false" class="x_btn pointer">X</div>
+        <a href="#/view3/{{Recipe.indexOf(randomRecipe)}}">
+            Why don't you try?
+            <h3>{{randomRecipe.Title}}</h3>
+
+            <p><img ng-src="{{randomRecipe.img}}" height="200" width="320"></p>
+        </a>
+    </div>
+
+
+</div>

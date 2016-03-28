@@ -1,0 +1,281 @@
+
+{"Recipe": 
+	
+	[{
+    "Title": "Chicken Salad",
+    "Description": "A healthy lunch option",
+    "Level": "Easy",
+    "Healthiness": 0,
+    "Ingredients": [{"name":"Chicken", "num":1 }, {"name": "Peppers", "num":2 }, {"name":"Lettuce", "num": 1}, {"name":"Tomato", "num": 1}, {"name":"Cucumber", "num": 1}, {"name":"Olive oil"}, {"name": "Yoghurt"}],
+    "Vegetarian": false,
+    "Vegan": false,
+    "glutenFree": false,
+    "category":"Red meat and Saturated fat",
+    "Instructions": "Fry the chicken and peppers in olive oil. Stir in the chicken into yoghurt and then put seasonings. Take a plate and place them all together. Enjoy!"
+  },
+  {
+    "Title": "Club Sandwich",
+    "Description": "Fun and easy !",
+    "Level": "Easy",
+    "img": 0,
+    "Ingredients": [{"name":"Chicken", "num": 1},{"name":"Grated Cheese"}, {"name":"Tomato", "num": 1}, {"name": "Egg", "num": 1}, {"name": "Mayonnaise"}],
+    "Vegetarian": false,
+    "Vegan": false,
+    "glutenFree": false,
+    "category":"Dairy and Eggs",
+    "Instructions": "First toast the bread and then spread the mayonnaise on it. Fry the egg, in a fry pan with oil. Then chopped it in slices and put it on the bread. Put two slices of tomato on top of it. Put the next slice on top of it. Fried the  and cut it in to small pieces, mix with mayonnise and seasonings. Put it on the top with cheese. Put the bread on top then the toothpick. Enjoy!"
+  },
+  {
+    "Title": "Cheesy Potato Bake",
+    "Description": "Especially for cheese lovers",
+    "Level": "Easy",
+    "Ingredients": [{"name":"Potato", "num": 1},{"name":"Onion", "num": 3}, {"name": "Milk", "num": "20Ml"}, {"name": "Butter", "num": "1tbsp"}, {"name": "Grated Cheese"}],
+    "Vegetarian": true,
+    "Vegan": false,
+    "glutenFree": true,
+    "category":"Starches and Legumes",
+    "Instructions": "Thinly slice potato and add to saucepan of water. Boil until softened. Cube the onion and place it in the saucepan with the potato. Add the milk, cover saucepan and bring to the boil. Then drain. Butter an ovenproof dish and layer half of the potato. Sprinkle half of the onions on top then season. Sprinkle cheese on top.Add rest of the onion and cheese. Enjoy! \nBake at 190c for 35mins or until crispy and golden. Enjoy!"
+  },
+  {
+    "Title": "Stuffed Peppers",
+    "Description": "Must try!",
+    "Level": "Medium",
+    "Ingredients": [{"name":"Peppers", "num": 1},{"name":"Mushrooms", "num": 2}, {"name": "Bacon", "num": 1}, {"name": "Grated Cheese"}],
+    "Vegetarian": true,
+    "Vegan": false,
+    "glutenFree": true,
+    "category":"Red meat and Saturated fat",
+    "Instructions": "Cut the pepper in half, take out middle but leave stump at the top. Layer the hole pepper in cheese then place in the chopped mushrooms and bacon. Season with salt and pepper. Then put more cheese on top and also layer top half of pepper with cheese then put the top back on, and cook for 10-20 mins on 150 C. Enjoy!"
+    },
+    {
+    "Title": "Tuna Salad",
+    "Description": "Easy and quick dinner",
+    "Level": "Easy",
+    "Ingredients": [{"name":"Tuna", "num": 1},{"name":"Onion", "num": 1}, {"name": "Mayonnaise"}],
+    "Vegetarian": true,
+    "Vegan": false,
+    "glutenFree": false,
+    "category":"Fish",
+    "Instructions": "First of all drain tuna and then mix all the ingedients. Season with salt and pepper..Enjoy!"
+  },
+    {
+    "Title": "Apple Juice Chicken",
+    "Description": "A yummie one",
+    "Level": "Easy",
+    "Ingredients": [{"name":"Apple Juice", "num": "2 Glasses"},{"name":"Chicken", "num": 1}, {"name": "Mayonnaise"}],
+    "Vegetarian": false,
+    "Vegan": false,
+    "glutenFree": true,
+    "category":"Red meat and Saturated fat",
+    "Instructions": "Heat a deep pan over medium heat. Add the juice and bring to a low boil. Add in the chicken and season with salt and pepper. Lower everything and cover the pan, cooking for 15 minutes. Flip the chicken over and cook for another 15 minutes, until the juice is thick and syrupy, turning the chicken every 10 minutes or so. Enjoy!"
+  },
+  {
+    "Title": "Stuffed Chicken",
+    "Description": "A good post-workout meal",
+    "Level": "Medium",
+    "Ingredients": [{"name": "Chicken", "num": 1}, {"name": "Bacon", "num": 1}, {"name": "Cream Cheese","num": "1 tbsp"}, {"name": "Peppers", "num": 1}, {"Butter": "1 tbsp"}],
+    "Vegetarian": false,
+    "Vegan": false,
+    "glutenFree": true,
+    "category": "Red meat and Saturated fat",
+    "Instructions":"Preheat oven to 180 C. Butterfly cut the chicken and cut up the pepper into small pieces.Mix it with the cream cheese and season. Place on the chicken breast, then roll up the chicken breast to enclose the cream cheese mixture. Wrap chicken breast with 1 rasher of bacon, then brush it with melted butter. Bake in the oven for about half an hour or until cooked at 200 C. Enjoy!"
+  },
+  {
+    "Title": "Avocado Chicken Salad",
+    "Description": "Avocado lovers",
+    "Level": "Easy",
+    "Ingredients": [{"name": "Chicken", "num": 1}, {"name": "Avocado", "num": 1}],
+    "Vegetarian": false,
+    "Vegan": false,
+    "glutenFree": true,
+    "category": "Red meat and Saturated fat",
+    "Instructions": "Add ingredients in a bowl and mash with a fork until well combined. Enjoy!"
+  },
+  {
+    "Title": "Omelette",
+    "Description": "A quick 10 minutes meal",
+    "Level": "Easy",
+    "Ingredients": [{"name": "Eggs", "num": 3}, {"name": "Onion", "num": 1}, {"name": "Mushrooms", "num": 2}, {"name": "Bacon", "num": 1}, {"name": "Tomato", "num": 1}, {"name": "Fried Oil"}],
+    "Vegetarian":false,
+    "Vegan": false,
+    "glutenFree": true,
+    "category": "Dairy and Eggs",
+    "Instructions": "Crack the eggs in a bowl and wisk until all orangy. Put in the bowl all the ingredients: chopped mushroom, onion, bacon and tomatoe. Put this mixture in a pan, on low heat but make sure you put a little bit of fried oil before. After 5 minutes change side, ans as soon as is slighty brown, this means you omelette is ready.Enjoy!"
+  },
+  {
+    "Title": "Sweet Potato Wedges",
+    "Description": "You will love it",
+    "Level": "Easy",
+    "Ingredients": [{"name": "Sweet Potatoes", "num": 2}, {"name": "Olive oil"}],
+    "Vegetarian": true,
+    "Vegan": true,
+    "glutenFree": true,
+    "category": "Starches and Legumes",
+    "Instructions":"Chop the potatoes into wedges shapes. Preheat oven to 180 C. Place into a pan...cover with olive oil, and add some salt and pepper! Cook for 30 minutes at 200 C. Enjoy!"
+  },
+  {
+    "Title": "Alternative Pizza",
+    "Description": "Alternative Pizza",
+    "Level": "Easy",
+    "Ingredients": [{"name": "Pitta Bread"}, {"name": "Tomato Sauce"}, {"name": "Grated Cheese"}],
+    "Vegetarian":true,
+    "Vegan": false,
+    "glutenFree": false,
+    "category": "Dairy and Eggs",
+    "Instructions": "Preheat the oven to 180 C. Slice the pitta in half length ways so you get two bases. Spread a spoonful of tomato sauce. Sprinkle some grated  cheese and place it on your pizza. Put into the oven and cook until cheese goes stringy. Enjoy!"
+  },
+  {
+    "Title": "Basic Risotto",
+    "Description": "Suitable for vegetarians",
+    "Level": "Easy",
+    "Ingredients": [{"name": "Rice"}, {"name": "Onion", "num": 1}, {"name": "White Wine", "num": "175 ml"}, {"name": "Butter", "num": "25gr"}],
+    "Vegetarian": true,
+    "Vegan": false,
+    "glutenFree": true,
+    "category": "Fruits and Vegetables",
+    "Instructions":"Chop and fry the onion until soft. Add the rice and fry for 2-3 minutes. Add the wine and season with salt and pepper. After 10 minutes, add the butter and stir until melted. Enjoy!"
+  },
+  {
+    "Title": "Spanish Omelette",
+    "Description": "Viva espana !!",
+    "Level": "Easy",
+    "Ingredients": [{"name": "Eggs", "num": 3}, {"name": "Onion", "num": 1}, {"name": "Garlic", "num": 1}, {"name": "Clove Potato","num": 1}, {"name": "Peppers", "num": 1}, {"name": "Fried Oil"}],
+    "Vegetarian": true,
+    "Vegan": false,
+    "glutenFree": true,
+    "category": "Dairy and Eggs",
+    "Instructions":"Chop the onion and pepper and crush the garlic. Thinly slice the potato. Heat a lot of fried oil in a large pan and then cook the vegetables until soft. Meanwhile beat the eggs in a large bowl then add the vegetable to the eggs and mix gently, trying not to break up the potato. Heat some more oil in the pan and add the mixture. Cook until the underside is golden, then cover with a plate, flip, and slide it back into the pan to cook the other side to match. Enjoy!"
+  },
+  {
+    "Title": "Vegetable Pasta",
+    "Description": "Pasta pasta pasta",
+    "Level": "Easy",
+    "Ingredients": [{"name": "Pasta"}, {"name": "Onion", "num": 1}, {"name": "Mushroom", "num": 1}, {"name": "Peppers", "num": 1}, {"name": "Tomato Sauce"}, {"name": "Olive Oil"}],
+    "Vegetarian": true,
+    "Vegan": true,
+    "glutenFree": false,
+    "category": "Fruits and Vegetables",
+    "Instructions": "Chop up your vegetables and put them in an oven dish, add a bit of olive oil, and slosh it about till everything's covered. Put them in the oven until they're all nice and soft. Cook and strain pasta. Mix in your pasta  the tomatoe sauce and then the roasted vegetables. Enjoy!"
+  },
+  {
+    "Title": "Macaroni Cheese",
+    "Description": "Best recipe in the world!",
+    "Level": "Easy",
+    "Ingredients": [{"name": "Macaroni"}, {"name": "Greate Cheese"}, {"name": "Butter", "num": "2 tbsp"}, {"name": "Milk"}, {"name": "Flour"}],
+    "Vegetarian": true,
+    "Vegan": false,
+    "glutenFree": false,
+    "category": "Starches and Legumes",
+    "Instructions": "In a pan, boil some water and put in the macaroni for 10 minutes. In another pan melt the butter and add the milk. Also, add some grated cheese, enough cheese that when it melts into the milk/butter consistency it gets quite thick. Add a teaspoon of plain flour.. When the pasta is done drain the water and mix in with the sauce. Enjoy!"
+  },
+  {
+    "Title": "Creamy Mushrooms",
+    "Description": "Creamilicious",
+    "Level": "Easy",
+    "Ingredients": [{"name": "Mushrooms", "num": 3 }, {"name": "Tomato", "num": 1}, {"name": "Grated Cheese"}, {"name": "Garlic Clove", "num": 1}, {"name": "Double Cream"}, {"name": "Onion", "num": 1}],
+    "Vegetarian": true,
+    "Vegan": false,
+    "glutenFree": false,
+    "category": "Dairy and Eggs",
+    "Instructions": "Chop the tomato, onion and garlic and slice the mushrooms. Heat the pan on high, and then cook the onion for 1 minute. Add the garlic and the mushrooms. Cook them until the mushrooms are soft. Add the tomatoes and stir it all together. Stir in the double creame and cheese. Enjoy!"
+  },
+    {
+    "Title": "Onion Rings",
+    "Description": "Fuuuun",
+    "Level": "Easy",
+    "Ingredients": [{"name": "Flour"}, {"name": "Onion", "num": 1}],
+    "Vegetarian": true,
+    "Vegan": true,
+    "glutenFree": false,
+    "category": "Starches and Legumes",
+    "Instructions": "Firstly taking the cup of self rasing flour and mixing it with water until the consistancy is runny but not too runny. Then add some salt and pepper. Cut the onion into rings and dip them into the mixture. Deep fry them until crispy and brown.Enjoy!"
+  },
+  {
+    "Title": "Quesadillas",
+    "Description": "Fuuuun",
+    "Level": "Medium",
+    "Ingredients": [{"name": "Grated Cheese"}, {"name": "Onion", "num": 1},{"name": "Mushroom", "num": 1}, {"name": "Yoghurt"}, {"name": "Fried oil"}],
+    "Vegetarian": true,
+    "Vegan": false,
+    "glutenFree": false,
+    "category": "Starches and Legumes",
+    "Instructions": "Chop mushroom and onion and saute in fried oil until soft. Place with grated cheese and seasonings in a tortilla and fold in half. Fry in same pan until both sides are brown and crispy. Serve it with yoghurt to dip. Enjoy!"
+  },
+  {
+    "Title": "Noodle Soup",
+    "Description": "yuuummiie",
+    "Level": "Easy",
+    "Ingredients": [{"name": "Noodles"}, {"name": "Onion", "num": 1},{"name": "Garlic Cloves", "num": 2}, {"name": "Peppers", "num": 1}, {"name": "Egg", "num": 1}, {"name": "Carrot", "num": 1}],
+    "Vegetarian": true,
+    "Vegan": false,
+    "glutenFree": false,
+    "category": "Dairy and Eggs",
+    "Instructions": "Firstly blend onion, garlic and pepper in the blender. Then slice carrot and take 2.5 cups of water and boil them. Also boil noodles in another pan and when there are quit soft then take the other veggies and put them in. Break an egg over the soup and stir for a few seconds. Enjoy!"
+  },
+  {
+    "Title": "Salmon Pasta",
+    "Description": "So easy .. So nutritious",
+    "Level": "Medium",
+    "Ingredients": [{"name": "Smoked Salmon", "num": 1}, {"name": "Pasta"},{"name": "Double Cream"}],
+    "Vegetarian": true,
+    "Vegan": false,
+    "glutenFree": false,
+    "category": "Fish",
+    "Instructions": "Cook the pasta and drain. Put back into the pan and add the double cream and salmon. Cook on a medium heat for about 3-4 minutes. Season with salt and pepper. Enjoy !"
+  },
+    {
+    "Title": "Ham and Cheese Wrap",
+    "Description": "Easy Peasy",
+    "Level": "Easy",
+    "Ingredients": [{"name": "Tortilla", "num": 1}, {"name": "Ham"},{"name": "Grated Cheese"}, {"name": "Tomato Sauce"},{ "name": "Lettuce", "num": 1}],
+    "Vegetarian": false,
+    "Vegan": false,
+    "glutenFree": false,
+    "category": "Red meat and Saturated fat",
+    "Instructions": "Put a tortilla in a plate. On top of it put the tomato sauce, one slice of ham, some grated cheese and lettuce leaf. Roll it up.. Enjoy!"
+  },
+  {   
+    "Title": "Simple Pasta",
+    "Description": "Eaaaasy",
+    "Level": "Easy",
+    "Ingredients": [{"name": "Pasta"}, {"name": "Sausage", "num": 1},{"name": "Onion", "num": 1}, {"name": "Peppers","num": 1},{"name": "Lettuce", "num": 1}, {"name": "Garlic Clove", "num": 1}],
+    "Vegetarian": false,
+    "Vegan": false,
+    "glutenFree": false,
+    "category": "Red meat and Saturated fat",
+    "Instructions": "Add meat to a hot skillet and chop into bite-sized chunks. Then add the onion and the chopped pepper and garlic. Boil pasta and drain. Once the meat is browned add it to the pasta along with the jar of pasta sauce until it's heated through. Enjoy!"
+  },
+  {   
+    "Title": "Lemonade Scones",
+    "Description": "Classic twist with 3 ingredients",
+    "Level": "Easy",
+    "Ingredients": [{"name": "Flour"}, {"name": "Double Cream"},{"name": "Lemonade", "num": "1 cup"}],
+    "Vegetarian": true,
+    "Vegan": false,
+    "glutenFree": false,
+    "category": "Starches and Legumes",
+    "Instructions": "Preheat oven to 200 C. Grease and line a baking tray with either spray oil or baking paper. In a bowl, sift 3 cups of flour, then add the cream and lemonade. Mix the ingredients together and once the mixture becomes like a ball, put flour on the table and put the mixture on the table. Flatten the dough, use a cookie cutter (however size you want) and cut and place on the board. Glaze all the dough with milk. Put it in the oven until they are golden brown. Cool them down and serve... Enjoy!"
+  },
+  {   
+    "Title": "Nutella Hot Chocolate",
+    "Description": "Yummy bundle of joy",
+    "Level": "Easy",
+    "Ingredients": [{"name": "Nutella"}, {"name": "Milk", "num": "1 Cup"},{"name": "Marshmallows"}],
+    "Vegetarian": true,
+    "Vegan": false,
+    "glutenFree": false,
+    "category": "Starches and Legumes",
+    "Instructions": "Pour about 1/4 cup of the milk into the saucepan. Then, add about 2 spoonfuls of nutella. Whisk the milk and nutella together in the saucepan until it's blended. Slowly pour the rest of the milk (3/4 cup) into the saucepan. Stir until it becomes hot & frothy. Carefully pour the mixture into a cup or mug. You're done! You can add anything into the hot chocolate, such as marshmallows/ whipped cream etc. Enjoy!"
+  }
+  ],
+
+  "Healthiness": {
+    "Chicken" : 2,
+    "Potato": 1,
+    "Ham": 1,
+    "Peppers": 3,
+    "Feta": 6
+  }
+}
+
+   
