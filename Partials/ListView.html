@@ -28,7 +28,7 @@
             </div>
 
 
-            <p>Gluten Free <input type="checkbox" value="glutenFree" ng-model="glutenFree" /></p>
+            <p>Gluten Free <input type="checkbox" ng-true-value="'Gluten Free'" ng-false-value="''" ng-model="queryCheck" /></p>
 
     <form name="settings" class="settings zoom_small" id="set_list">
         <label class="{{cat}}" ng-repeat="cat in getCategories()">
@@ -41,7 +41,7 @@
 
     <ul class="center allRecipes">
 
-        <li ng-repeat="Rec in filtered=(Recipe | filter:filterByCategory | orderBy: RecOrder) | filter: queryCheck | limitTo: userLimit | filter: glutenFree" >
+        <li ng-repeat="Rec in filtered=(Recipe | filter:filterByCategory | orderBy: RecOrder) | filter: queryCheck | limitTo: userLimit" >
 
             <a href="#/view3/{{Recipe.indexOf(Rec)}}">
 

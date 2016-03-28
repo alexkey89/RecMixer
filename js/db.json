@@ -32,7 +32,7 @@
     "Ingredients": [{"name":"Potato", "num": 1},{"name":"Onion", "num": 3}, {"name": "Milk", "num": "20Ml"}, {"name": "Butter", "num": "1tbsp"}, {"name": "Grated Cheese"}],
     "Vegetarian": true,
     "Vegan": false,
-    "glutenFree": true,
+    "glutenFree": "Gluten Free",
     "category":"Starches and Legumes",
     "Instructions": "Thinly slice potato and add to saucepan of water. Boil until softened. Cube the onion and place it in the saucepan with the potato. Add the milk, cover saucepan and bring to the boil. Then drain. Butter an ovenproof dish and layer half of the potato. Sprinkle half of the onions on top then season. Sprinkle cheese on top.Add rest of the onion and cheese. Enjoy! \nBake at 190c for 35mins or until crispy and golden. Enjoy!"
   },
@@ -43,7 +43,7 @@
     "Ingredients": [{"name":"Peppers", "num": 1},{"name":"Mushrooms", "num": 2}, {"name": "Bacon", "num": 1}, {"name": "Grated Cheese"}],
     "Vegetarian": true,
     "Vegan": false,
-    "glutenFree": true,
+    "glutenFree": "Gluten Free",
     "category":"Red meat and Saturated fat",
     "Instructions": "Cut the pepper in half, take out middle but leave stump at the top. Layer the hole pepper in cheese then place in the chopped mushrooms and bacon. Season with salt and pepper. Then put more cheese on top and also layer top half of pepper with cheese then put the top back on, and cook for 10-20 mins on 150 C. Enjoy!"
     },
@@ -65,7 +65,7 @@
     "Ingredients": [{"name":"Apple Juice", "num": "2 Glasses"},{"name":"Chicken", "num": 1}, {"name": "Mayonnaise"}],
     "Vegetarian": false,
     "Vegan": false,
-    "glutenFree": true,
+    "glutenFree": "Gluten Free",
     "category":"Red meat and Saturated fat",
     "Instructions": "Heat a deep pan over medium heat. Add the juice and bring to a low boil. Add in the chicken and season with salt and pepper. Lower everything and cover the pan, cooking for 15 minutes. Flip the chicken over and cook for another 15 minutes, until the juice is thick and syrupy, turning the chicken every 10 minutes or so. Enjoy!"
   },
@@ -76,7 +76,7 @@
     "Ingredients": [{"name": "Chicken", "num": 1}, {"name": "Bacon", "num": 1}, {"name": "Cream Cheese","num": "1 tbsp"}, {"name": "Peppers", "num": 1}, {"Butter": "1 tbsp"}],
     "Vegetarian": false,
     "Vegan": false,
-    "glutenFree": true,
+    "glutenFree": "Gluten Free",
     "category": "Red meat and Saturated fat",
     "Instructions":"Preheat oven to 180 C. Butterfly cut the chicken and cut up the pepper into small pieces.Mix it with the cream cheese and season. Place on the chicken breast, then roll up the chicken breast to enclose the cream cheese mixture. Wrap chicken breast with 1 rasher of bacon, then brush it with melted butter. Bake in the oven for about half an hour or until cooked at 200 C. Enjoy!"
   },
@@ -87,7 +87,7 @@
     "Ingredients": [{"name": "Chicken", "num": 1}, {"name": "Avocado", "num": 1}],
     "Vegetarian": false,
     "Vegan": false,
-    "glutenFree": true,
+    "glutenFree": "Gluten Free",
     "category": "Red meat and Saturated fat",
     "Instructions": "Add ingredients in a bowl and mash with a fork until well combined. Enjoy!"
   },
@@ -98,7 +98,7 @@
     "Ingredients": [{"name": "Eggs", "num": 3}, {"name": "Onion", "num": 1}, {"name": "Mushrooms", "num": 2}, {"name": "Bacon", "num": 1}, {"name": "Tomato", "num": 1}, {"name": "Fried Oil"}],
     "Vegetarian":false,
     "Vegan": false,
-    "glutenFree": true,
+    "glutenFree": "Gluten Free",
     "category": "Dairy and Eggs",
     "Instructions": "Crack the eggs in a bowl and wisk until all orangy. Put in the bowl all the ingredients: chopped mushroom, onion, bacon and tomatoe. Put this mixture in a pan, on low heat but make sure you put a little bit of fried oil before. After 5 minutes change side, ans as soon as is slighty brown, this means you omelette is ready.Enjoy!"
   },
@@ -109,7 +109,7 @@
     "Ingredients": [{"name": "Sweet Potatoes", "num": 2}, {"name": "Olive oil"}],
     "Vegetarian": true,
     "Vegan": true,
-    "glutenFree": true,
+    "glutenFree": "Gluten Free",
     "category": "Starches and Legumes",
     "Instructions":"Chop the potatoes into wedges shapes. Preheat oven to 180 C. Place into a pan...cover with olive oil, and add some salt and pepper! Cook for 30 minutes at 200 C. Enjoy!"
   },
@@ -131,7 +131,7 @@
     "Ingredients": [{"name": "Rice"}, {"name": "Onion", "num": 1}, {"name": "White Wine", "num": "175 ml"}, {"name": "Butter", "num": "25gr"}],
     "Vegetarian": true,
     "Vegan": false,
-    "glutenFree": true,
+    "glutenFree": "Gluten Free",
     "category": "Fruits and Vegetables",
     "Instructions":"Chop and fry the onion until soft. Add the rice and fry for 2-3 minutes. Add the wine and season with salt and pepper. After 10 minutes, add the butter and stir until melted. Enjoy!"
   },
@@ -142,7 +142,7 @@
     "Ingredients": [{"name": "Eggs", "num": 3}, {"name": "Onion", "num": 1}, {"name": "Garlic", "num": 1}, {"name": "Clove Potato","num": 1}, {"name": "Peppers", "num": 1}, {"name": "Fried Oil"}],
     "Vegetarian": true,
     "Vegan": false,
-    "glutenFree": true,
+    "glutenFree": "Gluten Free",
     "category": "Dairy and Eggs",
     "Instructions":"Chop the onion and pepper and crush the garlic. Thinly slice the potato. Heat a lot of fried oil in a large pan and then cook the vegetables until soft. Meanwhile beat the eggs in a large bowl then add the vegetable to the eggs and mix gently, trying not to break up the potato. Heat some more oil in the pan and add the mixture. Cook until the underside is golden, then cover with a plate, flip, and slide it back into the pan to cook the other side to match. Enjoy!"
   },
@@ -285,7 +285,7 @@
     "Ingredients": [{"name": "Beef Mince"}, {"name": "Carrots Grated"},{"name": "Tomatoes", "num":2}, {"name":"Potato Mash"}, {"name":"Grated Cheese"}],
     "Vegetarian": false,
     "Vegan": false,
-    "glutenFree": true,
+    "glutenFree": "Gluten Free",
     "category": "Red meat and Saturated fat",
     "Instructions": "Prepare the mash potato. Cook the minced beef and add the grated carrot, chopped tomatoes and salt and pepper for taste. Add mash potato and minced beef in a pan, and sprinke with cheese. Cook for about 40 minutes at 200 C. Enjoy!"
   },
@@ -318,7 +318,7 @@
     "Ingredients": [{"name": "Pork Chop"}, {"name": "Pineapple Rings", "num": 2},{"name": "Egg", "num": 1}, {"name":"Onion", "num":1}, {"name":"Tomato", "num": 1}],
     "Vegetarian": false,
     "Vegan": false,
-    "glutenFree": true,
+    "glutenFree": "Gluten Free",
     "category": "Red meat and Saturated fat",
     "Instructions": "Trim chops and remove excess fat. Beat egg lightly and toss the chops in this. Pile stuffing on a piece of greaseproof paper and coat chops both sides. Cook at 200 C for 1 hour and 30 minutes. Ten minutes before end of cooking time place pineapple and tomato in roasting tin with chops. Enjoy!"
   },
@@ -340,7 +340,7 @@
     "Ingredients": [{"name": "Sausage", "num": 1}, {"name": "Onion", "num": 1},{"name": "Pepper", "num": 1}, {"name": "Potatoes", "num":2}, {"name": "Fried Oil"}],
     "Vegetarian": false,
     "Vegan": false,
-    "glutenFree": true,
+    "glutenFree": "Gluten Free",
     "category": "Red meat and Saturated fat",
     "Instructions": "Heat oil in a large pan and saute chopped onions. Cut peppers into strips and add them into pan as well. Cut sausages into chunks and wait until peppers and onions are browned and then add sausages. Then peal the potato and cut it into chunks and put in a pan of boiling water. Wait 5 minutes. Drain water from potates and then smash them. Put sausages into a deep bowl or dish and cover with mashed potatoes and put in the oven at 180 C for 15 minutes. Enjoy!"
   },
@@ -351,7 +351,7 @@
     "Ingredients": [{"name": "Nutella"}, {"name": "Marshmallows"},{"name": "Sliced Bread"}, {"name":"Butter"}],
     "Vegetarian": true,
     "Vegan": false,
-    "glutenFree": true,
+    "glutenFree": "Gluten Free",
     "category": "Dairy and Eggs",
     "Instructions": "Spread nutella on one slice of bread and lay marshmallows in top. Then put your second slice of bread on top. Lay a chosen amount of butter to a frying pan and let it sizle for 30 seconds. Put your sandwich in the fried butter into the pan and let it fry until it is golden. Flip the bread over and do the same with the other side. Enjoy!"
   },
@@ -397,7 +397,7 @@
     "Vegan": false,
     "glutenFree": false,
     "category": "Red meat and Saturated fat",
-    "Instructions": "Blend oreo and 1/4th cup of butter to make a paste. Spread it on the mould and press it well to make a base. Freeze it for 10 mins. Melt nutella in a pan and add the other 1/4th cup of butter and mix well. Spread it on the frozen base.Freeze it for 2 hours. Enjoy"
+    "Instructions": "Blend oreo and 1/4th cup of butter to make a paste. Spread it on the mould and press it well to make a base. Freeze it for 10 mins. Melt nutella in a pan and add the other 1/4th cup of butter and mix well. Spread it on the frozen base. Freeze it for 2 hours. Enjoy!"
   }
 
   ],

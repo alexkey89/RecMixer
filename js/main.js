@@ -38,7 +38,6 @@ RecipeMixerModule.controller("ListController", function ($scope, $location, $roo
 
   $scope.pageClass = 'page-list';
 
-
   $rootScope.$on('data_loaded', function () {
     $scope.Recipe = db.data.Recipe;
     $scope.randomRecipe = $scope.Recipe[Math.floor(Math.random() * $scope.Recipe.length)];
@@ -81,6 +80,11 @@ RecipeMixerModule.controller("ListController", function ($scope, $location, $roo
     }
     return true;
   }
+
+//test filter
+//$scope.glutenAllFree = 'Gluten Free';
+
+//end of test filter
 
 
 })
