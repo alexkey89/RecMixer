@@ -81,10 +81,6 @@ RecipeMixerModule.controller("ListController", function ($scope, $location, $roo
     return true;
   }
 
-//test filter
-//$scope.glutenAllFree = 'Gluten Free';
-
-//end of test filter
 
 
 })
