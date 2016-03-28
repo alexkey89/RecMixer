@@ -266,7 +266,140 @@
     "glutenFree": false,
     "category": "Starches and Legumes",
     "Instructions": "Pour about 1/4 cup of the milk into the saucepan. Then, add about 2 spoonfuls of nutella. Whisk the milk and nutella together in the saucepan until it's blended. Slowly pour the rest of the milk (3/4 cup) into the saucepan. Stir until it becomes hot & frothy. Carefully pour the mixture into a cup or mug. You're done! You can add anything into the hot chocolate, such as marshmallows/ whipped cream etc. Enjoy!"
+  },
+    {   
+    "Title": "Pasta Bolognese",
+    "Description": "Endlessly Adaptable",
+    "Level": "Easy",
+    "Ingredients": [{"name": "Tomatoes Chopped"}, {"name": "Beef Mince"},{"name": "Tomato Puree"}, {"name":"Garlic Clove", "num": 1}, {"name":"Olive Oil"}],
+    "Vegetarian": false,
+    "Vegan": false,
+    "glutenFree": false,
+    "category": "Red meat and Saturated fat",
+    "Instructions": "Heat some olive oil in a pan, the add the beef mince and stirring til broken up and fully browned. Add pepper and salt for seasoning and the garlic. quickly add the can of chopped tomatoes, and the two passatas as to not allow the garlic to burn. Boil pasta and then drain... Put mince in pasta and ready... Enjoy!"
+  },
+    {   
+    "Title": "Easy Shepherds Pie",
+    "Description": "So simple, tastes so good",
+    "Level": "Easy",
+    "Ingredients": [{"name": "Beef Mince"}, {"name": "Carrots Grated"},{"name": "Tomatoes", "num":2}, {"name":"Potato Mash"}, {"name":"Grated Cheese"}],
+    "Vegetarian": false,
+    "Vegan": false,
+    "glutenFree": true,
+    "category": "Red meat and Saturated fat",
+    "Instructions": "Prepare the mash potato. Cook the minced beef and add the grated carrot, chopped tomatoes and salt and pepper for taste. Add mash potato and minced beef in a pan, and sprinke with cheese. Cook for about 40 minutes at 200 C. Enjoy!"
+  },
+    {   
+    "Title": "Tomato and Bacon Risotto",
+    "Description": "Tryyy it",
+    "Level": "Medium",
+    "Ingredients": [{"name": "Rice"}, {"name": "Tomatoes Chopped", "num": 2},{"name": "Tomato Puree"}, {"name":"Onion", "num":1}, {"name":"Fried Oil"}],
+    "Vegetarian": true,
+    "Vegan": false,
+    "glutenFree": false,
+    "category": "Red meat and Saturated fat",
+    "Instructions":"Chop and fry the onion with fried oil. Boil and stir rice, til starts to go clear. Add the tomato puree. Stir well and add a cupful to the rice. Afterwards add the chopped tomatoes. Cook and stir til it's absorbed. Keep adding water if necessary until the rice is cooked. Add salt and pepper and stir for the last time. Enjoy!"
+  },
+    {   
+    "Title": "Ribs",
+    "Description": "Easy cooked meal",
+    "Level": "Easy",
+    "Ingredients": [{"name": "Pork Ribs"}, {"name": "Sugar", "num": "0.5 cup"},{"name": "Ketchup", "num": "0.75 cup"}, {"name":"Soy sauce", "num":"1 tbsp"}, {"name":"Flour", "num": "2 tbsp"}],
+    "Vegetarian": false,
+    "Vegan": false,
+    "glutenFree": false,
+    "category": "Red meat and Saturated fat",
+    "Instructions":"Mix all the ingredients together. Pour over pork belly ribs. Cook for 1hour and 30 minutes at 180 C. Then turn down the oven to 130 C and for a futher 30 minutes. Enjoy !"
+  },
+    {   
+    "Title": "Pork Chops",
+    "Description": "Criispyyyy",
+    "Level": "Medium",
+    "Ingredients": [{"name": "Pork Chop"}, {"name": "Pineapple Rings", "num": 2},{"name": "Egg", "num": 1}, {"name":"Onion", "num":1}, {"name":"Tomato", "num": 1}],
+    "Vegetarian": false,
+    "Vegan": false,
+    "glutenFree": true,
+    "category": "Red meat and Saturated fat",
+    "Instructions": "Trim chops and remove excess fat. Beat egg lightly and toss the chops in this. Pile stuffing on a piece of greaseproof paper and coat chops both sides. Cook at 200 C for 1 hour and 30 minutes. Ten minutes before end of cooking time place pineapple and tomato in roasting tin with chops. Enjoy!"
+  },
+    {   
+    "Title": "Schnitzel",
+    "Description": "The austrian style",
+    "Level": "Medium",
+    "Ingredients": [{"name": "Pork Tenderloin"}, {"name": "Breadcrumbs"},{"name": "Flour"}, {"name":"Egg", "num":1}],
+    "Vegetarian": false,
+    "Vegan": false,
+    "glutenFree": false,
+    "category": "Red meat and Saturated fat",
+    "Instructions": "Cut meat into sliced and beat the meat. Make 3 plates: one with flour, one with a beaten egg and one with breadcrumbs. 1- cover the meat with a thin layer of flour, 2- dunk wholly into, usually one, beaten egg, 3- cover in bread crumbs. Heat a thin layer of oil in a frying pan. Add breaded meat. Turn pieces over when side is cooked. Oil evaporates so add enough so that the oil is always about halfway up the meat edge. Enjoy!"
+  },
+    {   
+    "Title": "Mexican Supper",
+    "Description": "The austrian style",
+    "Level": "Easy",
+    "Ingredients": [{"name": "Sausage", "num": 1}, {"name": "Onion", "num": 1},{"name": "Pepper", "num": 1}, {"name": "Potatoes", "num":2}, {"name": "Fried Oil"}],
+    "Vegetarian": false,
+    "Vegan": false,
+    "glutenFree": true,
+    "category": "Red meat and Saturated fat",
+    "Instructions": "Heat oil in a large pan and saute chopped onions. Cut peppers into strips and add them into pan as well. Cut sausages into chunks and wait until peppers and onions are browned and then add sausages. Then peal the potato and cut it into chunks and put in a pan of boiling water. Wait 5 minutes. Drain water from potates and then smash them. Put sausages into a deep bowl or dish and cover with mashed potatoes and put in the oven at 180 C for 15 minutes. Enjoy!"
+  },
+    {   
+    "Title": "Nutella French toast",
+    "Description": "Deeelliiiciouusss",
+    "Level": "Easy",
+    "Ingredients": [{"name": "Nutella"}, {"name": "Marshmallows"},{"name": "Sliced Bread"}, {"name":"Butter"}],
+    "Vegetarian": true,
+    "Vegan": false,
+    "glutenFree": true,
+    "category": "Dairy and Eggs",
+    "Instructions": "Spread nutella on one slice of bread and lay marshmallows in top. Then put your second slice of bread on top. Lay a chosen amount of butter to a frying pan and let it sizle for 30 seconds. Put your sandwich in the fried butter into the pan and let it fry until it is golden. Flip the bread over and do the same with the other side. Enjoy!"
+  },
+   {   
+    "Title": "Carrot Cake",
+    "Description": "Healthyy",
+    "Level": "Easy",
+    "Ingredients": [{"name": "Carrots Grated"}, {"name": "Butter", "num":"100 gr"},{"name": "Sugar", "num": "0.75 cup"}, {"name":"Egg", "num": 1}, {"name": "Flour", "num": "1 cup"}, {"name": "Cinnamon"}],
+    "Vegetarian": true,
+    "Vegan": false,
+    "glutenFree": false,
+    "category": "Dairy and Eggs",
+    "Instructions": "Beat the butter with the sugar until creamy, add the eggs and other ingredients. Mix well and put on the oven at 200 C for 35 minutes. Enjoy!"
+  },
+    {   
+    "Title": "Cheesy Pizza Bagels",
+    "Description": "Cheesy goodness",
+    "Level": "Easy",
+    "Ingredients": [{"name": "Bagels", "num": 4}, {"name":"Grated cheee"},{"name": "Tomato sauce"}, {"name":"Egg", "num": 1}, {"name": "Flour", "num": "1 cup"}, {"name": "Cinnamon"}],
+    "Vegetarian": true,
+    "Vegan": false,
+    "glutenFree": false,
+    "category": "Dairy and Eggs",
+    "Instructions": "Cut the bagels in half. Cover them with tomato ketchup. Add the grated cheese. Grill in medium heat until the cheese has melted and turned golden brown. Enjoy!"
+  },
+    {   
+    "Title": "Pasta n Pesto",
+    "Description": "Past lovers",
+    "Level": "Easy",
+    "Ingredients": [{"name": "Pasta"}, {"name":"Pesto sauce"},{"name": "Chicken", "num": 1}, {"name":"Grated Cheese"}, {"name": "Mushrooms", "num": 2}, {"name": "Peppers", "num": 2}],
+    "Vegetarian": false,
+    "Vegan": false,
+    "glutenFree": false,
+    "category": "Red meat and Saturated fat",
+    "Instructions": "Boil and drain pasta. Add pesto and stir in also grated cheese & chopped chicken. Also add the veggies - who sauted before in fried oil until golden. Enjoy!"
+  },
+   {   
+    "Title": "Oreo Tart",
+    "Description": "For oreo lovers",
+    "Level": "Easy",
+    "Ingredients": [{"name": "Oreo", "num": 20}, {"name":"Nutella", "num": "0.5 cup"},{"name": "Milk", "num": "1 cup"}, {"name":"Butter", "num": "0.5 cup"}, {"name": "Mushrooms", "num": 2}, {"name": "Peppers", "num": 2}],
+    "Vegetarian": true,
+    "Vegan": false,
+    "glutenFree": false,
+    "category": "Red meat and Saturated fat",
+    "Instructions": "Blend oreo and 1/4th cup of butter to make a paste. Spread it on the mould and press it well to make a base. Freeze it for 10 mins. Melt nutella in a pan and add the other 1/4th cup of butter and mix well. Spread it on the frozen base.Freeze it for 2 hours. Enjoy"
   }
+
   ],
 
   "Healthiness": {
