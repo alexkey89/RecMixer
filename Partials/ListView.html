@@ -1,7 +1,15 @@
 <section class="container">
     <h1>Search anything</h1>
     <div class="center searchBox">
+    
         <input type="text" ng-model="queryCheck" placeholder="e.g Sweet and sour chicken..." />
+        
+        <div class="micsettings">
+            <div ng-click="voiceSearch()" class="voiceSearch"><img src="img/mic.png" height="50" width="50" /></div>
+            <div class="stopVoice" ng-click="stopVoice()"></div>    
+        </div>
+        
+        
     </div>
     <br />
 
@@ -36,13 +44,11 @@
         </label>
     </form>
 
-           <div ng-init="search()"></div>
-
 
     <ul class="center allRecipes">
 
         <li ng-repeat="Rec in filtered=(Recipe | filter:filterByCategory | orderBy: RecOrder) | filter: queryCheck | limitTo: userLimit" >
-
+            
             <a href="#/view3/{{Recipe.indexOf(Rec)}}">
 
                 <p class="title">{{Rec.Title}}</p>
@@ -61,7 +67,6 @@
                 </p>
 
         </li>
-
         </a>
     </ul>
 

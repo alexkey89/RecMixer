@@ -13,8 +13,40 @@
 body, h1{
 	font-family: helvetica;
 	font-weight: 100;
+  overflow-x: hidden;
 }
 
+.gray{
+  color: #666;
+}
+
+.stopVoice {
+  cursor: pointer;
+    background: red;
+    width: 1px;
+    padding: 10px;
+    color: #fff;
+    margin: 0 auto;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+}
+
+.stopVoice:hover{
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+}
+
+.micsettings div {
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    position: relative;
+    margin-left: 9px;
+}
+
+.notifications{
+  color: #f00;
+}
 
 body{
 	/*background: url('../img/bg2.png') no-repeat;*/
@@ -53,6 +85,19 @@ img {
   transition: opacity 0.2s linear;
   z-index: 222;
 }
+
+.voiceSearch img {
+    cursor: pointer;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+}
+
+
+.voiceSearch img:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+}
+
 
 .open:hover { opacity: 0.8; }
 
@@ -461,6 +506,19 @@ a{
     font-weight: bold;
     text-shadow: 1px 2px 5px #666;
     color: #fff;
+}
+
+/**add recipe- forms view**/
+
+
+form[name="RecipeAdd"] input {
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+    padding: 5px;
+    clear: both;
+    position: relative;
+    margin-bottom: 20px;
 }
 
 /*nav{

@@ -46,7 +46,19 @@ RecipeMixerModule.controller("ListController", function ($scope, $location, $roo
 
   $scope.filter = filterSettings;
 
+
+  //submit form
   $scope.submitForm = function (filter, cat) {
+
+    var allChecked = document.querySelectorAll('input[type="checkbox"]:checked');
+
+    if (!allChecked.length) {
+      
+      $scope.errorMsg = 'Please select at least one category';
+
+      return;
+
+    }
 
     $location.path('/view2');
 
@@ -81,9 +93,76 @@ RecipeMixerModule.controller("ListController", function ($scope, $location, $roo
     return true;
   }
 
+//voice search
+$scope.voiceSearch = function(){
+
+  $scope.addToSearch = function(val){
+    $scope.queryCheck = val;
+  }
+
+  $scope.clearSearch = function(){
+    $scope.queryCheck = '';
+  }
+
+  var commands = {
+    'search *val': function(val) {
+      $scope.addToSearch(val)
+      $scope.$apply();
+    },
+    'clear search' : function(){
+      $scope.clearSearch();
+      $scope.$apply();
+    }
+  }
+
+  annyang.addCommands(commands);
+
+  annyang.debug();
+
+  annyang.start();
+
+  $scope.stopVoice = function(){
+  
+    annyang.abort();
+  
+  }
+
+
+}
+
+
+
 
 
 })
+
+
+//formsView
+
+RecipeMixerModule.controller("FormViewCtrl", ['$scope','$rootScope', 'db', function($scope, $rootScope, db){
+
+  $scope.FormData = {}
+
+  $rootScope.$on('data_loaded', function () {
+    $scope.Recipe = db.data.Recipe;
+  })
+
+  $scope.Recipe = db.data.Recipe;
+
+  $scope.addRecipe = function(){
+    
+     console.log($scope.FormData)
+     $scope.Recipe = $scope.Recipe.push($scope.FormData);  
+
+  }
+  
+
+
+
+
+
+
+}])
 
 //global - nav menu
 
@@ -109,6 +188,10 @@ for (var i = 0; i < cls.length; i++ ) {
 }
 
 });
+
+
+
+
 
 
 

@@ -1,34 +1,11 @@
 <h1 class="instruction step1 yo">Search by Category</h1>
+
+<p class="notifications">{{errorMsg}}</p>
+
 <form name="settings" class="settings" ng-submit="submitForm()">
-    <!--
-        <label name="chicken" class="chicken">
-            <input type="checkbox" ng-model="query" value="chicken">Chicken
-        </label>
-
-        <label name="pork" class="pork">
-            <input type="checkbox" value="pork">Pork
-        </label>
-
-        <label name="fish" class="fish">
-            <input type="checkbox" value="fish">Fish
-        </label>
-
-        <label name="beef" class="beef">
-            <input type="checkbox" value="beef">Beef
-        </label>
-
-        <label name="pasta" class="pasta">
-            <input type="checkbox" value="pasta">Pasta
-        </label>
-
-        <label name="rice" class="rice">
-            <input type="checkbox" value="rice">Rice
-        </label>
-
-        <input type="submit" /> -->
     
     <label name="{{cat}}" class="{{cat}}" ng-repeat="cat in getCategories()">
-        <input name="whatever" type="checkbox" ng-model="filter[cat]" value="{{cat}}"/> {{cat}}
+        <input name="whatever" type="checkbox" ng-model="filter[cat]" value="{{cat}}" /> {{cat}}
     </label>
 
     <input type="submit"></input>

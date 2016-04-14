@@ -14,10 +14,22 @@ RecipeMixerModule.factory ("db", function($http, $rootScope){
       var healthiness = 0;
       Ingredients.map(function(ingredient){
         if (loadedData.Healthiness[ingredient.name]){
-          healthiness = healthiness + (loadedData.Healthiness[ingredient.name] * parseInt(ingredient.num)) ;
+
+          exceptions(ingredient)
+
+          healthiness = healthiness + (loadedData.Healthiness[ingredient.name] * parseInt(ingredient.num));
+
         }
       })
       return healthiness;
+    }
+
+    function exceptions(ingredient){
+
+           if (ingredient.num == null){ 
+                ingredient.num = 1
+           }
+
     }
 
     for (var i = 0; i < loadedData.Recipe.length; i++) {
@@ -26,7 +38,7 @@ RecipeMixerModule.factory ("db", function($http, $rootScope){
 
       recipe.img = 'img/' + recipe.Title.toLowerCase().replace(/ /g, '') + '.jpg';
       
-      recipe.HealthinessAmount = calculateHealthiness(recipe.Ingredients)
+      recipe.HealthinessAmount = calculateHealthiness(recipe.Ingredients);
 
       recipe.Healthiness = Math.floor(recipe.HealthinessAmount / recipe.Ingredients.length);
 
