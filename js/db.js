@@ -52,4 +52,3 @@ RecipeMixerModule.factory ("db", function($http, $rootScope){
   return db;
 });
 
-
